@@ -22,16 +22,16 @@ class UserSeeder extends Seeder
             'role' => UserRole::ADMIN,
         ]);
 
-         User::create([
+        User::create([
             'name' => 'Admir',
             'email' => 'adm1@teste.com',
             'password' => Hash::make('12345678'),
             'role' => UserRole::ADMIN,
         ]);
 
-         User::create([
-            'name' => 'Gabirel',
-            'email' => 'gabirel@teste.com',
+        User::create([
+            'name' => 'João Vitor',
+            'email' => 'joao@teste.com',
             'password' => Hash::make('12345678'),
             'role' => UserRole::CLIENTE,
         ]);
