@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Produtos</title>
 </head>
 <body>
+    <a href="{{ route('produtos.create') }}">Criar novo Produto</a>
     @foreach ($produtos as $produto)
         <p>Nome: {{ $produto->nome }}</p>
         <p>Preço: R${{ $produto->preco }}</p>
-        <p>Categoria: {{ $produto->categoria->nome }}</p>
+        <p>Categoria: {{ $produto->categoria->nome }}</p>   
         <hr>    
     @endforeach
 </body>
